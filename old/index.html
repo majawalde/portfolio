@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maja Walde</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Maja Walde</div>
+      <div class="">
+        <ul class="nav-links">
+          <li><a href="#about">Om meg</a></li>
+          <li><a href="#experience">Erfaring</a></li>
+          <li><a href="#projects">Prosjekter</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="profile">
+      <div class="section-pic">
+        <img src="./assets/maja-profil.png" alt="Profile picture" />
+      </div>
+      <div class="text">
+        <p class="text-p1">Hei, jeg er</p>
+        <h1 class="title">Maja Walde</h1>
+        <p class="text-p2">Datateknologi-student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv2023.pdf')"
+          >
+            CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Kontakt informasjon
+          </button>
+        </div>
+        <div class="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="min linkedin profil"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/maja-walde-04b280206/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="min github profil"
+            class="icon"
+            onclick="location.href='https://github.com/majawalde'"
+          />
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
