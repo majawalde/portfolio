@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import profilepicture from "./assets/maja-profil.png";
+import profilepicture from "./img/maja-profil.png";
 
 const About = () => {
   return (
@@ -19,8 +19,20 @@ const About = () => {
           </p>
         </div>
         <div className="about-icons">
-          <AiFillLinkedin className="linkedin-icon" />
-          <AiFillGithub className="github-icon" />
+          <a
+            href="https://www.linkedin.com/in/maja-walde-04b280206/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillLinkedin className="linkedin-icon" />
+          </a>
+          <a
+            href="https://github.com/majawalde"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillGithub className="github-icon" />
+          </a>
         </div>
       </div>
     </>

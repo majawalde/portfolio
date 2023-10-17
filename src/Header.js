@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import CV from "./img/majawalde_cv_no-kopi.pdf";
 
 const Header = () => {
   return (
@@ -12,7 +13,12 @@ const Header = () => {
               <BsFillMoonStarsFill className="darkmode-icon" />
             </li>
             <li>
-              <a className="resume-button" href="#">
+              <a
+                className="resume-button"
+                href={CV}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 CV
               </a>
             </li>
