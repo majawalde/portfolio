@@ -1,6 +1,7 @@
 import React from "react";
-import { BsFillMoonStarsFill } from "react-icons/bs";
+
 import CV from "./img/majawalde_cv_no-kopi.pdf";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 
 const Header = () => {
   return (

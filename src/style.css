@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --background-light: #f1f1f1;
+  --background-dark: #1f1f1f;
+  --color-gradient-start: #9796f0;
+  --color-gradient-end: #fbc7d4;
+  --color-text: #f1f1f1;
+  --color-highlight: rgb(31, 41, 55);
+  --color-icons: rgb(75, 85, 99);
+  --color-button: #f1f1f1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +19,7 @@
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: var(--background-light);
   margin: 0;
 }
 
@@ -54,56 +65,59 @@ a {
 
 .resume-button {
   text-decoration: none;
-  color: #f1f1f1;
-  background-image: linear-gradient(#9796f0, #fbc7d4);
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  color: var(--color-text);
+  background-image: linear-gradient(
+    var(--color-gradient-start),
+    var(--color-gradient-end)
+  );
+  padding: 8px 16px;
   border-radius: 6px;
   margin-left: 32px;
+  transition: all 0.5s ease;
+}
+
+.resume-button:hover {
+  transform: scale(1.1);
 }
 
 .about-section {
-  padding-left: 40px;
+  padding: 40px 40px;
   text-align: center;
-  padding: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .about-name-h2 {
   font-size: 48px;
   line-height: 1;
-  padding-top: 0.5rem; /* 8px */
-  padding-bottom: 0.5rem; /* 8px */
-  color: #9796f0;
+  padding: 0.5rem 0;
   font-weight: 500;
+  background: -webkit-linear-gradient(
+    var(--color-gradient-start),
+    var(--color-gradient-end)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .about-name-h3 {
-  font-size: 1.5rem; /* 24px */
-  line-height: 2rem; /* 32px */
-  padding-top: 0.5rem; /* 8px */
-  padding-bottom: 0.5rem; /* 8px */
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0.5rem 0;
 }
 
 .about-text {
-  padding-top: 1.25rem; /* 20px */
-  padding-bottom: 1.25rem; /* 20px */
-  line-height: 2rem; /* 32px */
-  color: rgb(31 41 55);
+  padding: 1.25rem 0;
+  line-height: 2rem;
+  color: var(--color-highlight);
 }
 
 .about-icons {
-  font-size: 3rem; /* 48px */
+  font-size: 3rem;
   line-height: 1;
   display: flex;
   justify-content: center;
   gap: 16px;
-  padding-top: 0.75rem; /* 12px */
-  padding-bottom: 0.75rem; /* 12px */
-  color: rgb(75 85 99);
+  padding: 0.75rem 0;
+  color: var(--color-icons);
 }
 
 .profile-image-section {
@@ -123,29 +137,23 @@ a {
 .profile-img {
   height: 330px;
   width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .projects {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
 .projects-h3 {
-  font-size: 1.875rem; /* 30px */
-  line-height: 2.25rem; /* 36px */
-  padding-top: 0.25rem; /* 4px */
-  padding-bottom: 0.25rem; /* 4px */
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  padding: 0.25rem 0;
 }
 
 .projects-text {
-  padding-top: 0.5rem; /* 8px */
-  padding-bottom: 0.5rem; /* 8px */
-  line-height: 1.75rem; /* 28px */
-  color: rgb(31 41 55);
+  padding: 0.5rem 0;
+  line-height: 1.75rem;
+  color: var(--color-highlight);
 }
 
 .project-list {
@@ -171,7 +179,10 @@ a {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(#9796f0, rgba(151, 150, 240, 0.5));
+  background: linear-gradient(
+    var(--color-gradient-start),
+    rgba(151, 150, 240, 0.5)
+  );
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -191,21 +202,17 @@ a {
 }
 
 .layer h3 {
-  font-size: 1.5rem; /* 24px */
-  line-height: 2rem; /* 32px */
-  padding-top: 0.5rem; /* 8px */
-  padding-bottom: 0.5rem; /* 8px */
-  color: #f1f1f1;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0.5rem 0;
+  color: var(--color-text);
 }
 
 .layer a {
   text-decoration: none;
-  color: #9796f0;
-  background-color: #f1f1f1;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  color: var(--color-gradient-start);
+  background-color: var(--color-button);
+  padding: 8px 16px;
   border-radius: 50px;
   margin-top: 16px;
   font-size: 18px;
@@ -217,9 +224,6 @@ a {
 
 .footer {
   font-size: small;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding: 80px 40px 40px;
   text-align: center;
 }

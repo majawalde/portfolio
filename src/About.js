@@ -11,7 +11,7 @@ const About = () => {
         </div>
         <div>
           <h2 className="about-name-h2">Maja Walde</h2>
-          <h3 className="about-name-h3">Datateknologi</h3>
+          <h3 className="about-name-h3">Datateknologi-student</h3>
           <p className="about-text">
             Jeg er for tiden student på 3. året på datateknologi ved
             Universitetet i Bergen. Jeg er interessert i fullstack utvikling og
